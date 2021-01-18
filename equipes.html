@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ac4-5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="background: url(&quot;assets/img/Ucl.jpg&quot;) top / cover no-repeat, linear-gradient(rgb(8,18,103) 0%, rgb(172,32,204) 49%), #071446;opacity: 1;filter: blur(0px) contrast(100%);font-family: Champions-Bold;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="delete-team-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #ffffff;">
+                    <h4 class="modal-title" style="color: rgb(14,19,80);">Deseja excluir esta equipe?</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p style="color: rgb(36,39,96);">Esta ação irá excluir a equipe e não pode ser desfeita.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary" type="button" style="background: rgb(160,30,194);">Confirmar</button></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="height: 85px;background: rgb(14,19,80);">
+        <div class="container"><a class="navbar-brand" href="index.html" style="color: rgb(172,32,204);font-family: Champions-Bold;font-size: 25px;border-color: rgb(255,255,255);">UEFA Champions QEVS</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"
+                style="background: #ac20cc;color: rgb(255,255,255);border-style: solid;border-color: rgb(172,32,204);border-radius: 24px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="filter: contrast(200%);"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="width: 68px;">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" id="btn-logout" href="#" style="background: rgb(160,30,194);font-family: Champions-Bold;">Logout</a></span><strong style="color: rgb(255,255,255);margin: 0px;margin-left: 25px;">Administrador</strong></div>
+        </div>
+    </nav>
+    <div class="table-responsive" id="rank" style="margin: 0px;margin-right: 0px;padding: 70px;opacity: 1;">
+        <table class="table">
+            <thead>
+                <tr class="text-uppercase" style="background: #0a189c;color: rgb(255,255,255);font-family: Champions-Bold;text-align: left;">
+                    <th style="width: 39px;background: #0a189c;">nome da equipe</th>
+                    <th style="width: 37px;">SIGLA</th>
+                    <th style="width: 113px;">LOCAL</th>
+                </tr>
+            </thead>
+            <tbody style="text-align: center;">
+                <tr style="background: #0e1350;font-family: Champions-Bold;color: rgb(255,255,255);text-align: left;">
+                    <td class="text-uppercase" id="name" style="margin-left: 0px;margin-right: 0px;width: 185px;">qevs</td>
+                    <td id="initials"><a href="#" style="color: rgb(255,255,255);">QEVS</a></td>
+                    <td id="local">SÃO PAULO<button class="btn btn-primary float-right" id="btn-change" type="button" style="margin-right: 0px;margin-left: 0px;background: rgb(160,30,194);border-radius: 20px;border-width: 0px;width: 70px;">Alterar</button><button class="btn btn-primary float-right"
+                            id="btn-delete" type="button" style="background: rgb(160,30,194);border-radius: 20px;border-width: 0px;width: 70px;" data-target="#delete-team-modal" data-toggle="modal">Deletar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center" style="margin-top: 60px;"><button class="btn btn-primary text-uppercase" id="btn-new-team" type="button" style="width: 240px;height: 70px;background: rgb(160,30,194);border-radius: 40px;border-style: none;">Cadastrar nova equipe</button></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
